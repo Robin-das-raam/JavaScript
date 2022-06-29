@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Event</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!--    <label for="name">Name:-->
+<!--        <input type="text" name="name" class="name_class" id ="nid">-->
+<!--    </label>-->
+
+
+
+    <div>
+        <h2>Programing Language</h2>
+        <label for="program">
+            <input type="checkbox" name="program" id="p1_id" value="python"/>Python
+        </label>
+        <label for="program">
+            <input type="checkbox" name="program" id="p2_id" value="java" />Java
+        </label>
+    </div>
+
+    <label for="department">Department : </label>
+
+    <select name="department" id="dept">
+        <option value="cse">CSE</option>
+        <option value="eee">EEE</option>
+        <option value="ete">ETE</option>
+        <option value="mech">MECH</option>
+    </select>
+    </br>
+    </br>
+<!--    <textarea id="tid" cols="30" rows="10">-->
+<!--        <select class="ice-cream" name="ice-cream">-->
+<!--            <option value="">Select One …</option>-->
+<!--            <option value="chocolate">Chocolate</option>-->
+<!--            <option value="sardine">Sardine</option>-->
+<!--            <option value="vanilla">Vanilla</option>-->
+<!--        </select>-->
+<!--    </textarea>-->
+
+    <form action="">
+        <div>
+            <label for="name">
+                Name :
+                <input type="text" id="name" name="name" required
+                autofocus />
+            </label>
+        </div>
+        <div>
+            <label for="email">
+                Email :
+                <input type="email" id="email" name="email" required />
+            </label>
+        </div>
+        <div>
+            <label fpr="password">
+                Password :
+                <input type="password" id="password" name="password" required
+                minlength="4" maxlength="10"/>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="signup" />
+        </div>
+    </form>
+    <script src ="DOM_Event.js"></script>
+
+</body>
+</html>
