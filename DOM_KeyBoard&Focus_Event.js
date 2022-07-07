@@ -1,0 +1,79 @@
+// KeyBoard Event Object
+//1. Keydown - pressing a key, can repeat
+//2. Keypress
+//3. KeyUp
+//4. some properties - key, keyCode, code, shiftKey, ctlKey, repeat
+
+//KeyDown object
+
+//const textarea = document.querySelector("textarea");
+//
+//textarea.addEventListener("keydown", function(e){
+//    console.log('Key Down Event')
+//});
+//
+////Key press object
+//textarea.addEventListener("keypress", function(e){
+//    console.log("Key Press Event")
+//});
+//
+////Key up Object
+//textarea.addEventListener("keyup", function(e){
+//    console.log("Key Up Event")
+//});
+//
+////KeyEvent  Key properties
+//textarea.addEventListener("keyup", function(e){
+//    //console.log(e.key)
+//    //console.log(e.keyCode)
+//    //console.log(e.code)
+//    console.log(e.shiftKey)
+//})
+//
+//textarea.addEventListener("keyup",function(e){
+//    if(e.shiftKey){
+//        console.log("shift" + e.key)
+//    }
+//});
+//
+////repeat property
+//textarea.addEventListener("keydown",function(e){
+//    if(e.repeat){
+//        alert("don't hold the key asshole")
+//    }
+//});
+
+// FocusEvent object
+// <br>, <head>, <title>, <html>, <iframe>, <meta>, <param>, ,script>
+// <style>,<base>, <bdo> in these tag FocusEvent not gonna work
+// Types of Focus Event
+//1. onblur
+//2. onfocus
+//3. onfocusin
+//4. onfocusout
+
+const input = document.querySelector("input");
+input.addEventListener("blur",function (e){
+    //console.log("Blur Event")
+    input.style.background="transparent"
+    //for getting value
+    console.log(e.target.value)
+    //converting value to uppercase
+    input.value = e.target.value.toUpperCase();
+});
+
+input.addEventListener("focus", function(e) {
+  //  console.log("Focus Event")
+  //for adding background color/style
+  input.style.background = "cyan"
+  //for getting value
+  //console.log(e.target.value)
+});
+
+//input.addEventListener("focusin", function(){
+//    console.log("Focus In Event")
+//});
+//
+//input.addEventListener("focusout",function(){
+//    console.log("Focus Out Event")
+//})
